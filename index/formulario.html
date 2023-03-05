@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de Goku</title>
+</head>
+<body bgcolor="F2F2F2">
+    <font align="center">
+		<i>
+			<h2>¿Eres un verdadero fanático de Goku? Demuéstralo llenando nuestro formulario</h2>
+		</i>
+    </font>
+	<hr>
+	<br>
+	<form action="historia.html" method="post">
+		<fieldset>
+			<legend>Información de Combate</legend>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required><br>
+			<label for="planeta">Planeta:</label>
+			<input type="text" id="planeta" name="planeta" required><br>
+			<label for="poder">Poder:</label>
+			<input type="number" id="poder" name="poder" min="1" max="99999" required><br>
+			<label for="rival">Rival más fuerte:</label>
+			<input type="text" id="rival" name="rival" required><br>
+			<label for="transformacion">Transformación:</label>
+			<input type="checkbox" id="transformacion" name="transformacion" value="si"><br>
+			<label for="armadura">Armadura:</label>
+			<input type="checkbox" id="armadura" name="armadura" value="si"><br>
+			<label for="ataques">Ataques especiales:</label>
+			<textarea id="ataques" name="ataques" rows="4" cols="30"></textarea><br>
+			<label for="nivel">Nivel:</label>
+			<select id="nivel" name="nivel" required>
+				<option value="">Seleccione su nivel</option>
+				<option value="Saiyan">Saiyan</option>
+				<option value="Saiyan Dios">Saiyan Dios</option>
+				<option value="Ultra Instinto">Ultra Instinto</option>
+			</select><br>
+			<label for="equipo">Equipo:</label>
+			<fieldset>
+				<legend>Seleccione su equipo:</legend>
+				<input type="radio" id="vegeta" name="equipo" value="vegeta">
+				<label for="vegeta">Vegeta</label><br>
+				<input type="radio" id="trunks" name="equipo" value="trunks">
+				<label for="trunks">Trunks</label><br>
+				<input type="radio" id="piccolo" name="equipo" value="piccolo">
+				<label for="piccolo">Piccolo</label><br>
+				<input type="radio" id="gohan" name="equipo" value="gohan">
+				<label for="gohan">Gohan</label><br>
+			</fieldset>
+			<label for="tipo">Tipo de Ataque:</label>
+			<input type="radio" id="fisico" name="tipo" value="fisico">
+			<label for="fisico">Físico</label>
+			<input type="radio" id="energetico" name="tipo" value="energetico">
+			<label for="energetico">Energético</label><br>
+			<label for="fecha">Fecha de Nacimiento:</label>
+			<input type="date" id="fecha" name="fecha"><br>
+			<label for="color">Color de Aura:</label>
+			<input type="color" id="color" name="color"><br>
+			<label for="preferencias">Preferencias:</label>
+			<select id="preferencias" name="preferencias" multiple>
+				<option value="kamehameha">Kamehameha</option>
+				<option value="genkidama">Genkidama</option>
+				<option value="teletransportacion">Teletransportación</option>
+				<option value="volverse gigante">Volverse Gigante</option>
+			</select><br>
+			<label for="terminos">Acepto los términos y condiciones:</label>
+			<input type="checkbox" id="terminos" name="terminos" required><br>
+		</fieldset>
+
+		<div align="center">
+			<input type="submit" value="Enviar">
+		</div>
+
+	</form>
+</body>
+</html>
